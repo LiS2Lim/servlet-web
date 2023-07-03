@@ -7,11 +7,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/")
+@WebServlet("/hello")
 public class Hello extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) 
 			throws ServletException, IOException {
-		res.setContentType("text/html; charset=utf-8;");
+		res.setContentType("abcde");
 		PrintWriter out = res.getWriter();
 		out.println("<html>");
 		out.println("...");
