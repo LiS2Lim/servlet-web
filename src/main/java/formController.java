@@ -7,18 +7,23 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/")
-public class Hello extends HttpServlet {
-	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+@WebServlet("/form")
+public class formController extends HttpServlet {
+	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		req.setCharacterEncoding("UTF-8");
+		String name = req.getParameter("name");
+		
+		if(name == null || name.length() == 0) {
+			name = "unknown";
+		}
+		
 		res.setContentType("text/html; charset=UTF-8;");
 		PrintWriter page = res.getWriter();
-		page.println("<!DOCTYPE html>");
 		page.println("<html>");
 		page.println("<head>");
-		page.println("<title>test page home</title>");
 		page.println("</head>");
 		page.println("<body>");
-		page.println("<a href='/servlet-jsp/form/'>go to form</a>");
+		page.println("<h1>"+ name +"</h1>");
 		page.println("</body>");
 		page.println("</html>");
 	}
