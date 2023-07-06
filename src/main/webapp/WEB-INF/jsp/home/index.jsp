@@ -11,6 +11,8 @@
 	<ul>
 		<li><a href="/servlet-jsp/form">登録フォーム</a></li>
 		<li><a href="/servlet-jsp/fowardsampleservlet">フォワードページ</a></li>
+		<li><a href="/servlet-jsp/luck">java beans 練習</a></li>
+		<li><a href="/servlet-jsp/health">Healthチェックしましょ</a></li>
 	</ul>
 </body>
 </html>
