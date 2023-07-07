@@ -13,6 +13,7 @@
 		<li><a href="/servlet-jsp/fowardsampleservlet">フォワードページ</a></li>
 		<li><a href="/servlet-jsp/luck">java beans 練習</a></li>
 		<li><a href="/servlet-jsp/health">Healthチェックしましょ</a></li>
+		<li><a href="/servlet-jsp/health2">Health復習</a></li>
 	</ul>
 </body>
 </html>
