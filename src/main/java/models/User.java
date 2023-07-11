@@ -3,34 +3,25 @@ package models;
 import java.io.Serializable;
 
 public class User implements Serializable {
-	private String userId;
-	private String userPassword;
-	private String userName;
+	private String name;
+	private String password;
 	
 	public User() {}
-	public User(String userId, String userPassword, String userName) {
-		this.userId = userId;
-		this.userPassword = userPassword;
-		this.userName = userName;
+	public User(String name, String password) {
+		this.name = name;
+		this.password = password;
 	}
-
-	public String getUserId() {
-		return userId;
+	public String getName() {
+		return name;
 	}
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getUserPassword() {
-		return userPassword;
+	public String getPassword() {
+		return password;
 	}
-	public void setUserPassword(String userPassword) {
-		this.userPassword = userPassword;
-	}
-	public String getUserName() {
-		return userName;
-	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 }

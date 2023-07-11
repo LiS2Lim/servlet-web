@@ -13,7 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 public class HomeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/jsp/home/");
+		String path = "WEB-INF/jsp/home.jsp";
+		RequestDispatcher dispatcher = req.getRequestDispatcher(path);
 		dispatcher.forward(req,res);
 	}
 }
